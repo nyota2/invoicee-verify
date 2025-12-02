@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Invoice Verification</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ body {
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+   background-color: #f4f6f8;
+   margin: 0;
+   padding: 0;
+ }
+ .container {
+   max-width: 480px;
+   margin: 40px auto;
+   background: #ffffff;
+   padding: 24px 20px 32px;
+   box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+   border-radius: 12px;
+   text-align: center;
+ }
+
+ .status-icon {
+   width: 140px;
+   height: 140px;
+   border-radius: 50%;
+   background: #d9f5df;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto 24px;
+ }
+ .status-icon span {
+   font-size: 72px;
+   color: #1a9e4b;
+ }
+
+ h1 {
+   margin: 0 0 32px;
+   font-size: 28px;
+   font-weight: 600;
+   color: #111827;
+ }
+
+ .field-group {
+   text-align: left;
+   margin-bottom: 20px;
+ }
+ .label {
+   font-size: 12px;
+   font-weight: 600;
+   letter-spacing: 0.08em;
+   color: #4a4f57;
+   margin-bottom: 4px;
+   text-transform: uppercase;
+ }
+ .value {
+   background: #e2e4e9;
+   border-radius: 8px;
+   padding: 12px 14px;
+   font-size: 15px;
+   color: #111827;
+ }
+
+ .row {
+   display: flex;
+   gap: 12px;
+ }
+
+ .row .field-group {
+   flex: 1;
+ }
+
+ .actions {
+   margin-top: 32px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+ }
+
+ .btn {
+   display: block;
+   width: 100%;
+   border-radius: 50px;
+   padding: 14px 18px;
+   font-size: 15px;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 0.06em;
+   border: 2px solid #1fb050;
+   text-decoration: none;
+ }
+
+ .btn-primary {
+   background: #1fb050;
+   color: #ffffff;
+ }
+
+ .btn-outline {
+   background: #ffffff;
+   color: #1fb050;
+ }
+
+ .divider {
+   margin-top: 32px;
+   border-top: 1px solid #d1d5db;
+ }
+
+ .footer {
+   margin-top: 14px;
+   font-size: 12px;
+   color: #6b7280;
+   text-transform: uppercase;
+   letter-spacing: 0.08em;
+ }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="status-icon"><span>✔</span></div>
+
+  <h1>Invoice is valid</h1>
+
+  <div class="field-group">
+    <div class="label">Taxpayer Name</div>
+    <div class="value">Powerspeed Electrical Limited</div>
+  </div>
+
+  <div class="field-group">
+    <div class="label">Trade Name</div>
+    <div class="value">Electrosales</div>
+  </div>
+
+  <div class="field-group">
+    <div class="label">Address</div>
+    <div class="value">CNR, Kelvin North/Cripps, Harare, Harare</div>
+  </div>
+
+  <div class="row">
+    <div class="field-group">
+      <div class="label">Invoice Date and Time</div>
+      <div class="value">23/11/2025 11:38:09</div>
+    </div>
+    <div class="field-group">
+      <div class="label">Invoice Number</div>
+      <div class="value">9802082218</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field-group">
+      <div class="label">Invoice Total Amount</div>
+      <div class="value">60.00</div>
+    </div>
+    <div class="field-group">
+      <div class="label">Currency</div>
+      <div class="value">USD</div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <a href="#" class="btn btn-primary">Review Invoice</a>
+    <a href="#" class="btn btn-outline">Submit a Complaint</a>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="footer">
+    MY TAXES, MY DUTIES: BUILDING MY ZIMBABWE
+  </div>
+
+</div>
+</body>
+</html>
